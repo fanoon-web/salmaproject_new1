@@ -1,0 +1,105 @@
+{
+  "project_info": {
+    "project_number": "242975689044",
+    "project_id": "afnan-4df33",
+    "storage_bucket": "afnan-4df33.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:242975689044:android:a0756c5a20a453f51c60c1",
+        "android_client_info": {
+          "package_name": "com.example.assmenttow"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYlyZEHh00lTUoYzazzgmrI0FgNlffGB4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:242975689044:android:84abeb3837b84aa41c60c1",
+        "android_client_info": {
+          "package_name": "com.example.ecommerce"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYlyZEHh00lTUoYzazzgmrI0FgNlffGB4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:242975689044:android:b4acfb9004540d8e1c60c1",
+        "android_client_info": {
+          "package_name": "com.example.ecommerce001"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYlyZEHh00lTUoYzazzgmrI0FgNlffGB4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:242975689044:android:f09ebd06960d6d921c60c1",
+        "android_client_info": {
+          "package_name": "com.example.salmaproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYlyZEHh00lTUoYzazzgmrI0FgNlffGB4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:242975689044:android:ec7309fd422184121c60c1",
+        "android_client_info": {
+          "package_name": "com.example.salmaproject_new1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYlyZEHh00lTUoYzazzgmrI0FgNlffGB4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
