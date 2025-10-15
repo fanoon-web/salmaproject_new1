@@ -1,6 +1,7 @@
-
+// 🔸 Carousel Slider Component
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+
 class CustomerCarouselSlider extends StatelessWidget {
   const CustomerCarouselSlider({super.key});
 
@@ -13,7 +14,7 @@ class CustomerCarouselSlider extends StatelessWidget {
       'assets/anmation/Carousel4.jpeg',
     ];
 
-    return  CarouselSlider(
+    return CarouselSlider(
       options: CarouselOptions(
         height: 180,
         autoPlay: true,
@@ -49,9 +50,3 @@ class CustomerCarouselSlider extends StatelessWidget {
     );
   }
 }
-
-
-
-
-
-
