@@ -51,4 +51,5 @@ flutter:
     - assets/svg/
     - assets/images/
     - assets/images/default_avatar.png
+    - assets/svg/checkout.png
 

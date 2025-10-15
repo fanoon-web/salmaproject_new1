@@ -3,21 +3,20 @@ import 'package:flutter/material.dart';
 import 'package:hive_flutter/adapters.dart';
 import 'package:provider/provider.dart';
 import 'package:salmaproject_new1/core/configs/theme/app_colors.dart';
+import 'package:salmaproject_new1/persentaion/home_page/mainshell_page.dart';
+import 'package:salmaproject_new1/persentaion/login_page/_login_page_state.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
-
-import 'OrdersProvider.dart';
+import 'persentaion/orders/OrdersProvider.dart';
 import 'core/configs/theme/app_theme.dart';
-import 'home_page/home_page.dart';
-import 'login_page/_login_page_state.dart';
-import 'favorite_provider.dart';
-import 'mainshell_page.dart'; // هذا يكفي
+import 'persentaion/home_page/favorite_provider.dart';
+
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   await Hive.initFlutter();
   await Hive.openBox('favorites');
-  await Hive.openBox('cart');   // ← أضف هذا
+  await Hive.openBox('cart');
   await Hive.openBox('orders');
 
   await Supabase.initialize(
@@ -43,14 +42,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // هنا تحدد البريد الإلكتروني للمستخدم
+
     final String userEmail = 'test@example.com';
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'E-Commerce App',
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
-      home: MainShellPage(userEmail: 'test@example.com'), // ← هنا بدل initialRoute
+      home: MainShellPage(userEmail: 'test@example.com'),
       routes: {
         '/login': (context) => const LoginPage(),
       },
