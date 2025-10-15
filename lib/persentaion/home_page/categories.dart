@@ -6,8 +6,6 @@ import '../../core/configs/theme/app_colors.dart';
 import '../all_categories/pages/all_categories.dart';
 import '../category_products/pages/products_page.dart';
 
-
-
 class Categories extends StatelessWidget {
   const Categories({super.key});
 

@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-// import 'package:flutter_svg/flutter_svg.dart';
+
 
 class SearchField extends StatefulWidget {
   const SearchField({super.key});
@@ -71,12 +71,6 @@ class _SearchFieldState extends State<SearchField> {
             prefixIcon: Padding(
               padding: const EdgeInsets.all(12),
               child:Icon(Icons.search_sharp ,color: Colors.grey.shade600,)
-              // SvgPicture.asset(
-              //   AppVectors.search,
-              //   width: 20,
-              //   height: 20,
-              //   colorFilter: ColorFilter.mode(Colors.grey.shade600, BlendMode.srcIn),
-              // ),
             ),
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(50),

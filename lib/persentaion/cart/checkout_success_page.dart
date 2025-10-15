@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:salmaproject_new1/core/configs/theme/app_colors.dart';
+
+import '../../common/widgets/button/basic_app_button.dart';
+import '../../common/widgets/text/basic_app_text.dart';
 
 class CheckoutSuccessPage extends StatelessWidget {
   const CheckoutSuccessPage({super.key});
@@ -14,40 +16,29 @@ class CheckoutSuccessPage extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 24),
           child: Column(
+            spacing: 25,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset('assets/svg/checkout.png', width: 280),
-              const SizedBox(height: 40),
-              Text(
-                'Order Placed Successfully!',
-                textAlign: TextAlign.center,
-                style: theme.textTheme.bodyMedium?.copyWith(
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.blueGrey[900],
-                ),
+
+              BasicAppText(
+                title: 'Order Placed Successfully!',
+                style: theme.textTheme.bodyMedium?.copyWith(fontSize: 24),
               ),
-              const SizedBox(height: 12),
-              Text(
-                'Thank you for your purchase.\nYour order is being processed.',
-                textAlign: TextAlign.center,
-                style: theme.textTheme.bodySmall?.copyWith(
+
+              BasicAppText(
+                title:
+                    'Thank you for your purchase.\nYour order is being processed.',
+                style: theme.textTheme.bodyMedium?.copyWith(
                   fontSize: 16,
                   color: Colors.blueGrey[500],
+                  fontWeight: FontWeight.w500,
                 ),
               ),
-              const SizedBox(height: 40),
-              ElevatedButton(
+
+              BasicAppButton(
                 onPressed: () => Navigator.pop(context),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: AppColors.adminPrimary,
-                  padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 16),
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
-                ),
-                child: Text(
-                  'Back to Home',
-                  style: theme.textTheme.bodyMedium?.copyWith(color: Colors.white, fontSize: 16),
-                ),
+                title: 'Back to Home',
               ),
             ],
           ),

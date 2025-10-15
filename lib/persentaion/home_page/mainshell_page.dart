@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../../core/configs/theme/app_custom_bottom_nav_bar.dart';
 import '../cart/CartPage.dart';
+import '../favorite/favorites_page.dart';
 import '../orders/OrdersPage.dart';
 import '../settings/pages/settings.dart';
 import 'favorite_provider.dart';
